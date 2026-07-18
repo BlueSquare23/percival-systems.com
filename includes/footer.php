@@ -30,14 +30,17 @@
             <i class="bi bi-envelope-fill me-2"></i>
             <a href="mailto:<?php echo htmlspecialchars($site_email); ?>"><?php echo htmlspecialchars($site_email); ?></a>
           </li>
+          <li class="mb-2">
+            <i class="bi bi-telephone-fill me-2"></i>
+            <a href="tel:<?php echo htmlspecialchars($site_phone_tel); ?>"><?php echo htmlspecialchars($site_phone); ?></a>
+          </li>
           <li class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i>Pittsburgh, PA</li>
         </ul>
       </div>
     </div>
     <hr>
-    <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center small gap-2">
-      <div>&copy; <?php echo date('Y'); ?> Percival Systems LLC. All rights reserved.</div>
-      <div>Built with PHP &amp; Bootstrap.</div>
+    <div class="text-center small">
+      &copy; <?php echo date('Y'); ?> Percival Systems LLC. All rights reserved.
     </div>
   </div>
 </footer>

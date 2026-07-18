@@ -11,6 +11,7 @@ $service_highlights = [
     ['bi-diagram-3', 'Networking & IT', 'Network design, VLANs, wireless deployment, VPNs, and network segmentation.'],
     ['bi-shield-lock', 'Security', 'Penetration testing, intrusion detection, malware cleanup, and SOC/SIEM monitoring.'],
     ['bi-wordpress', 'WordPress', 'Site design and development, automatic updates and backups, and custom plugins and themes.'],
+    ['bi-graph-up-arrow', 'SEO & Analytics', 'PageSpeed optimization, search engine ranking, and Google Analytics and Tag Manager integration.'],
     ['bi-envelope-at', 'Hosting & Email', 'Web hosting, email deliverability, SSL automation, and DNS configuration.'],
     ['bi-clipboard-check', 'Consulting & Auditing', 'Architecture and security audits, fractional IT, and process documentation.'],
     ['bi-cpu', 'AI & Data', 'Custom RAG pipelines, internal LLM tooling, and business metrics pipelines.'],

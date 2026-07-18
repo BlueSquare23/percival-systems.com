@@ -1,6 +1,8 @@
 <?php
 $site_name  = 'Percival Systems LLC';
 $site_email = 'contact@percival-systems.com';
+$site_phone = '(412)-780-2053';
+$site_phone_tel = '+14127802053';
 
 if (!isset($page_title)) {
     $page_title = 'Software & IT Services';

@@ -57,7 +57,7 @@ include __DIR__ . '/includes/header.php';
     <h1 class="fw-bold mb-3">Contact Us</h1>
     <p class="lead mb-0 col-lg-8">
       Tell us a bit about your project or your infrastructure, and we'll follow up
-      at <?php echo htmlspecialchars($site_email); ?>.
+      at <?php echo htmlspecialchars($site_email); ?> or <?php echo htmlspecialchars($site_phone); ?>.
     </p>
   </div>
 </section>
@@ -103,16 +103,19 @@ include __DIR__ . '/includes/header.php';
               <div class="col-md-6">
                 <label for="name" class="form-label">Name</label>
                 <input type="text" class="form-control" id="name" name="name" maxlength="150" required
+                       placeholder="Jane Smith"
                        value="<?php echo htmlspecialchars($old['name'] ?? ''); ?>">
               </div>
               <div class="col-md-6">
                 <label for="email" class="form-label">Email</label>
                 <input type="email" class="form-control" id="email" name="email" maxlength="190" required
+                       placeholder="jane@example.com"
                        value="<?php echo htmlspecialchars($old['email'] ?? ''); ?>">
               </div>
               <div class="col-12">
                 <label for="subject" class="form-label">Subject</label>
                 <input type="text" class="form-control" id="subject" name="subject" maxlength="200" required
+                       placeholder="What can we help you with?"
                        value="<?php echo htmlspecialchars($old['subject'] ?? ''); ?>">
               </div>
               <div class="col-12">
@@ -144,7 +147,8 @@ include __DIR__ . '/includes/header.php';
               </div>
               <div class="col-12">
                 <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" name="message" rows="6" maxlength="5000" required><?php echo htmlspecialchars($old['message'] ?? ''); ?></textarea>
+                <textarea class="form-control" id="message" name="message" rows="6" maxlength="5000" required
+                          placeholder="Tell us about your project, goals, and any specific requirements..."><?php echo htmlspecialchars($old['message'] ?? ''); ?></textarea>
               </div>
               <div class="col-12">
                 <div class="g-recaptcha" data-sitekey="<?php echo htmlspecialchars($captcha_site_key); ?>"></div>
@@ -157,8 +161,10 @@ include __DIR__ . '/includes/header.php';
         </div>
 
         <div class="text-center text-muted small mt-4">
-          Prefer email? Reach us directly at
-          <a href="mailto:<?php echo htmlspecialchars($site_email); ?>"><?php echo htmlspecialchars($site_email); ?></a>.
+          Prefer to reach us directly?
+          <a href="mailto:<?php echo htmlspecialchars($site_email); ?>"><?php echo htmlspecialchars($site_email); ?></a>
+          or
+          <a href="tel:<?php echo htmlspecialchars($site_phone_tel); ?>"><?php echo htmlspecialchars($site_phone); ?></a>.
         </div>
       </div>
     </div>

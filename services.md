@@ -5,7 +5,6 @@
 - PHP, Python, and JavaScript web applications
 - Website rebuilds and modernization
 - Performance optimization and caching
-- SEO (Search Engine Optimization)
 
 ## Custom Software Development
 - Backend systems and automation scripts
@@ -42,13 +41,21 @@
 - Site design and development
 - Site migrations
 - Automatic updates and backups
-- Google Analytics setup
 - Custom plugins and themes
 - Custom form handlers
 - Performance optimization (caching & compression)
 - Security hardening & malware cleanup
 - WooCommerce setup and customization
 - Third-party API and webhook integrations
+
+## SEO & Analytics
+- PageSpeed optimization
+- Search engine indexing & ranking
+- Google Analytics integration
+- Technical SEO audits & schema markup
+- Google Search Console setup and monitoring
+- Google Tag Manager & conversion tracking
+- Custom analytics dashboards and reporting
 
 ## Hosting & Email
 - Web hosting setup and management
