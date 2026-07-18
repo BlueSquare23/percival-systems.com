@@ -59,6 +59,15 @@ Then visit `http://127.0.0.1:8099/index.php`.
 - Logo: **placeholder only** a Bootstrap Icons glyph (`bi-diagram-3-fill`) inside a gold circle (`.logo-mark`), used in both `includes/header.php` and `includes/footer.php`. Swap in a real logo image by editing those two spots once branding is finalized.
 - Site-wide contact info (name, email, phone) is defined once in `includes/header.php` (`$site_name`, `$site_email`, `$site_phone`, `$site_phone_tel`) and reused everywhere via the included variables, update it there, not per-page.
 
+## Link previews (Open Graph / Twitter Card)
+
+`includes/header.php` outputs Open Graph and Twitter Card meta tags on every page (canonical URL, title, description, image), so sharing any page link in Slack, iMessage, etc. shows a rich preview.
+
+- `assets/img/og-image.png` (1200x630) is the preview image, currently a generated placeholder in the site's navy/gold theme. Swap it for a real branded image later, keep it at 1200x630 (or same ~1.91:1 ratio) so it doesn't get cropped oddly by unfurlers.
+- `og:title` / `og:description` pull from each page's `$page_title` / `$page_description`, already set at the top of every page.
+- `$site_url` in `includes/header.php` is hardcoded to `https://percival-systems.com` (not derived from `$_SERVER`) so previews always resolve correctly even when rendered from a local/dev host. Update it if the domain ever changes.
+- Note: most unfurlers (Slack, iMessage, Facebook) cache the preview per URL, so after changing `og-image.png` or copy, a previously-shared link may keep showing the old preview until the platform's cache expires or is manually refreshed (e.g. Facebook's Sharing Debugger).
+
 ## Services list
 
 `services.md` and the `$services` array in `services.php` should always match, `services.md` is the readable source doc, `services.php` is what actually renders. When adding/removing a service, update both. The homepage's service overview grid (`$service_highlights` in `index.php`) is a curated subset/summary, not a full mirror — it doesn't need to list every single item, just the category-level highlights.

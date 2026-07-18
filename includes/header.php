@@ -4,6 +4,13 @@ $site_email = 'contact@percival-systems.com';
 $site_phone = '(412)-780-2053';
 $site_phone_tel = '+14127802053';
 
+// Canonical production URL, used for social link previews (Open Graph/Twitter Card).
+// Hardcoded rather than derived from $_SERVER so previews always point at the live
+// site, even when this is rendered from a local/dev host.
+$site_url = 'https://percival-systems.com';
+$og_url   = $site_url . ($_SERVER['PHP_SELF'] ?? '/index.php');
+$og_image = $site_url . '/assets/img/og-image.png';
+
 if (!isset($page_title)) {
     $page_title = 'Software & IT Services';
 }
@@ -25,6 +32,24 @@ function ps_nav_class($page, $current) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?php echo htmlspecialchars($page_title); ?> | <?php echo htmlspecialchars($site_name); ?></title>
 <meta name="description" content="<?php echo htmlspecialchars($page_description); ?>">
+<link rel="canonical" href="<?php echo htmlspecialchars($og_url); ?>">
+
+<!-- Open Graph / Facebook, Slack, iMessage, etc. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="<?php echo htmlspecialchars($site_name); ?>">
+<meta property="og:url" content="<?php echo htmlspecialchars($og_url); ?>">
+<meta property="og:title" content="<?php echo htmlspecialchars($page_title); ?> | <?php echo htmlspecialchars($site_name); ?>">
+<meta property="og:description" content="<?php echo htmlspecialchars($page_description); ?>">
+<meta property="og:image" content="<?php echo htmlspecialchars($og_image); ?>">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Percival Systems LLC: Software &amp; IT Services">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="<?php echo htmlspecialchars($page_title); ?> | <?php echo htmlspecialchars($site_name); ?>">
+<meta name="twitter:description" content="<?php echo htmlspecialchars($page_description); ?>">
+<meta name="twitter:image" content="<?php echo htmlspecialchars($og_image); ?>">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">

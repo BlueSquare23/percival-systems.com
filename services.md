@@ -2,7 +2,7 @@
 
 ## Web Development
 - Website design and development
-- PHP, Python, and JavaScript web applications
+- PHP, Python, Perl, and JavaScript web applications
 - Website rebuilds and modernization
 - Performance optimization and caching
 
