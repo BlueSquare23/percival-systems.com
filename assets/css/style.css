@@ -1,0 +1,297 @@
+/* Percival Systems LLC — site styles
+   Theme: navy blue + gold */
+
+:root {
+  --ps-navy: #0b1f3a;
+  --ps-navy-light: #14335c;
+  --ps-blue: #1d4e89;
+  --ps-gold: #d4af37;
+  --ps-gold-light: #e8c968;
+  --ps-gold-dark: #a9822a;
+  --ps-light: #f7f8fa;
+  --ps-gray: #5a6472;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: #2a2f36;
+}
+
+h1, h2, h3, h4, h5, .navbar-brand {
+  font-family: "Poppins", "Inter", system-ui, sans-serif;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navbar */
+.navbar-ps {
+  background-color: var(--ps-navy);
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+}
+
+.navbar-ps .navbar-brand {
+  color: #fff;
+  font-size: 1.25rem;
+  letter-spacing: .02em;
+}
+
+.navbar-ps .brand-llc {
+  color: var(--ps-gold);
+}
+
+.logo-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.35rem;
+  height: 2.35rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--ps-gold-light), var(--ps-gold-dark));
+  color: var(--ps-navy);
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.navbar-ps .nav-link {
+  color: rgba(255, 255, 255, .85);
+  font-weight: 500;
+  margin: 0 .25rem;
+}
+
+.navbar-ps .nav-link:hover,
+.navbar-ps .nav-link.active {
+  color: var(--ps-gold-light);
+}
+
+.navbar-ps .nav-link.active {
+  position: relative;
+}
+
+.navbar-ps .nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: .5rem;
+  right: .5rem;
+  bottom: -2px;
+  height: 2px;
+  background: var(--ps-gold);
+}
+
+/* Buttons */
+.btn-gold {
+  background-color: var(--ps-gold);
+  border-color: var(--ps-gold);
+  color: var(--ps-navy);
+  font-weight: 600;
+}
+
+.btn-gold:hover,
+.btn-gold:focus {
+  background-color: var(--ps-gold-light);
+  border-color: var(--ps-gold-light);
+  color: var(--ps-navy);
+}
+
+.btn-outline-gold {
+  border: 1px solid var(--ps-gold);
+  color: var(--ps-gold-light);
+  font-weight: 600;
+}
+
+.btn-outline-gold:hover {
+  background-color: var(--ps-gold);
+  color: var(--ps-navy);
+}
+
+.btn-outline-navy {
+  border: 1px solid var(--ps-navy);
+  color: var(--ps-navy);
+  font-weight: 600;
+}
+
+.btn-outline-navy:hover {
+  background-color: var(--ps-navy);
+  color: #fff;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, var(--ps-navy) 0%, var(--ps-navy-light) 60%, var(--ps-blue) 100%);
+  color: #fff;
+  padding: 6rem 0 5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 85% 20%, rgba(212, 175, 55, .18), transparent 45%);
+  pointer-events: none;
+}
+
+.hero .eyebrow {
+  color: var(--ps-gold-light);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  font-size: .85rem;
+  font-weight: 600;
+}
+
+.hero h1 {
+  font-size: clamp(2.1rem, 4.5vw, 3.25rem);
+  line-height: 1.15;
+}
+
+.hero .lead {
+  color: rgba(255, 255, 255, .82);
+  max-width: 640px;
+}
+
+.hero-icon-wrap {
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle, rgba(212, 175, 55, .16), transparent 70%);
+  border: 1px solid rgba(212, 175, 55, .35);
+}
+
+.hero-icon-wrap i {
+  font-size: 7rem;
+  color: var(--ps-gold);
+  opacity: .9;
+}
+
+/* Sections */
+.section {
+  padding: 5rem 0;
+}
+
+.section-alt {
+  background-color: var(--ps-light);
+}
+
+.section-eyebrow {
+  color: var(--ps-gold-dark);
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+/* Cards */
+.icon-badge {
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: .75rem;
+  background-color: var(--ps-navy);
+  color: var(--ps-gold);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.card-ps {
+  border: 0;
+  border-radius: .9rem;
+  box-shadow: 0 2px 14px rgba(11, 31, 58, .08);
+  transition: transform .18s ease, box-shadow .18s ease;
+  height: 100%;
+}
+
+.card-ps:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(11, 31, 58, .14);
+}
+
+.card-ps .card-title {
+  color: var(--ps-navy);
+}
+
+/* Portfolio */
+.portfolio-favicon {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: .6rem;
+  background-color: var(--ps-navy);
+  color: var(--ps-gold);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+/* CTA band */
+.cta-band {
+  background: linear-gradient(120deg, var(--ps-navy), var(--ps-blue));
+  color: #fff;
+}
+
+/* Footer */
+.site-footer {
+  background-color: var(--ps-navy);
+  color: rgba(255, 255, 255, .75);
+  border-top: 3px solid var(--ps-gold);
+}
+
+.site-footer a {
+  color: rgba(255, 255, 255, .75);
+}
+
+.site-footer a:hover {
+  color: var(--ps-gold-light);
+}
+
+.site-footer h6 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: .8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.site-footer hr {
+  border-color: rgba(255, 255, 255, .15);
+}
+
+/* Skill badges (About page) */
+.skill-badge {
+  background-color: #eef1f6;
+  color: var(--ps-navy);
+  font-weight: 500;
+  padding: .4rem .85rem;
+  border-radius: 2rem;
+  font-size: .85rem;
+  display: inline-block;
+  margin: .2rem;
+}
+
+/* Timeline / experience list */
+.exp-item {
+  border-left: 3px solid var(--ps-gold);
+  padding-left: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.exp-item h5 {
+  color: var(--ps-navy);
+}
+
+/* Alerts spacing on contact page */
+.form-label {
+  font-weight: 600;
+  color: var(--ps-navy);
+}
