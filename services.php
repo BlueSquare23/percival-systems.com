@@ -68,9 +68,15 @@ $services = [
         'title' => 'WordPress',
         'items' => [
             'Site design and development',
+            'Site migrations',
             'Automatic updates and backups',
             'Google Analytics setup',
             'Custom plugins and themes',
+            'Custom form handlers',
+            'Performance optimization (caching & compression)',
+            'Security hardening & malware cleanup',
+            'WooCommerce setup and customization',
+            'Third-party API and webhook integrations',
         ],
     ],
     [
