@@ -59,6 +59,18 @@ $services = [
             'SOC/SIEM monitoring setup',
             'HMAC-secured API endpoints',
             'Firewall and ACL configuration',
+            'Intrusion detection',
+            'Malware scanning & cleanup',
+        ],
+    ],
+    [
+        'icon' => 'bi-wordpress',
+        'title' => 'WordPress',
+        'items' => [
+            'Site design and development',
+            'Automatic updates and backups',
+            'Google Analytics setup',
+            'Custom plugins and themes',
         ],
     ],
     [
@@ -77,7 +89,7 @@ $services = [
         'items' => [
             'Software architecture review and auditing',
             'Security audits',
-            'Fractional IT — ongoing IT management for small to mid-sized organizations',
+            'Fractional IT: ongoing IT management for small to mid-sized organizations',
             'Documentation and process development',
         ],
     ],
@@ -131,7 +143,7 @@ $services = [
   <div class="container py-5 text-center">
     <h2 class="mb-3">Not sure where to start?</h2>
     <p class="lead mb-4 col-lg-8 mx-auto" style="color: rgba(255,255,255,.85);">
-      Tell us what you're working with and what's not working — we'll help you figure out
+      Tell us what you're working with and what's not working, and we'll help you figure out
       the right scope.
     </p>
     <a href="/contact.php" class="btn btn-gold btn-lg px-4">Contact Us</a>

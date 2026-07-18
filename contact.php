@@ -1,9 +1,14 @@
 <?php
 session_start();
 
+require __DIR__ . '/includes/env.php';
+load_env(__DIR__ . '/.env');
+$captcha_site_key = $_ENV['CAPTCHA_SITE_KEY'] ?? '';
+
 $page_title = 'Contact';
 $page_description = 'Get in touch with Percival Systems LLC about a software development or IT services project.';
 $current_page = 'contact';
+$extra_head = '<script src="https://www.google.com/recaptcha/api.js" async defer></script>';
 
 if (empty($_SESSION['csrf_token'])) {
     $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
@@ -14,6 +19,34 @@ $old    = $_SESSION['contact_old'] ?? [];
 unset($_SESSION['contact_errors'], $_SESSION['contact_old']);
 
 $status = $_GET['status'] ?? '';
+
+$service_types = [
+    'web'          => 'Web Development',
+    'software'     => 'Custom Software Development',
+    'infrastructure' => 'Infrastructure & Systems Administration',
+    'networking'   => 'Networking & IT',
+    'security'     => 'Security',
+    'wordpress'    => 'WordPress',
+    'hosting'      => 'Hosting & Email',
+    'consulting'   => 'Consulting & Auditing',
+    'ai-data'      => 'AI & Data',
+    'other'        => 'Other / Not Sure',
+];
+
+$budget_ranges = [
+    'under2500'  => 'Under $2,500',
+    '2500to10000' => '$2,500 - $10,000',
+    '10000to25000' => '$10,000 - $25,000',
+    'over25000'  => '$25,000+',
+    'unknown'    => 'Not Sure Yet',
+];
+
+$timelines = [
+    'asap'     => 'ASAP',
+    'month'    => 'Within a month',
+    'quarter'  => '1-3 months',
+    'flexible' => 'Flexible',
+];
 
 include __DIR__ . '/includes/header.php';
 ?>
@@ -83,8 +116,38 @@ include __DIR__ . '/includes/header.php';
                        value="<?php echo htmlspecialchars($old['subject'] ?? ''); ?>">
               </div>
               <div class="col-12">
+                <label for="service_type" class="form-label">Type of Service</label>
+                <select class="form-select" id="service_type" name="service_type">
+                  <option value="" disabled <?php echo empty($old['service_type']) ? 'selected' : ''; ?>>Select a service...</option>
+                  <?php foreach ($service_types as $value => $label): ?>
+                  <option value="<?php echo htmlspecialchars($value); ?>" <?php echo (($old['service_type'] ?? '') === $value) ? 'selected' : ''; ?>><?php echo htmlspecialchars($label); ?></option>
+                  <?php endforeach; ?>
+                </select>
+              </div>
+              <div class="col-sm-6">
+                <label for="budget" class="form-label">Estimated Budget</label>
+                <select class="form-select" id="budget" name="budget">
+                  <option value="" disabled <?php echo empty($old['budget']) ? 'selected' : ''; ?>>Select a budget range...</option>
+                  <?php foreach ($budget_ranges as $value => $label): ?>
+                  <option value="<?php echo htmlspecialchars($value); ?>" <?php echo (($old['budget'] ?? '') === $value) ? 'selected' : ''; ?>><?php echo htmlspecialchars($label); ?></option>
+                  <?php endforeach; ?>
+                </select>
+              </div>
+              <div class="col-sm-6">
+                <label for="timeline" class="form-label">Timeline</label>
+                <select class="form-select" id="timeline" name="timeline">
+                  <option value="" disabled <?php echo empty($old['timeline']) ? 'selected' : ''; ?>>Select a timeline...</option>
+                  <?php foreach ($timelines as $value => $label): ?>
+                  <option value="<?php echo htmlspecialchars($value); ?>" <?php echo (($old['timeline'] ?? '') === $value) ? 'selected' : ''; ?>><?php echo htmlspecialchars($label); ?></option>
+                  <?php endforeach; ?>
+                </select>
+              </div>
+              <div class="col-12">
                 <label for="message" class="form-label">Message</label>
                 <textarea class="form-control" id="message" name="message" rows="6" maxlength="5000" required><?php echo htmlspecialchars($old['message'] ?? ''); ?></textarea>
+              </div>
+              <div class="col-12">
+                <div class="g-recaptcha" data-sitekey="<?php echo htmlspecialchars($captcha_site_key); ?>"></div>
               </div>
               <div class="col-12">
                 <button type="submit" class="btn btn-gold btn-lg px-4">Send Message</button>

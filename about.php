@@ -1,6 +1,6 @@
 <?php
 $page_title = 'About';
-$page_description = 'About Percival Systems LLC — founded by a DevOps engineer with 6+ years of production infrastructure experience.';
+$page_description = 'About Percival Systems LLC, founded by a DevOps engineer with 6+ years of production infrastructure experience.';
 $current_page = 'about';
 include __DIR__ . '/includes/header.php';
 
@@ -74,12 +74,12 @@ $open_source = [
         <h2 class="mb-4">From production hosting to Percival Systems</h2>
         <p class="text-muted">
           Before founding Percival Systems, John spent 6+ years at a production web hosting
-          company &mdash; starting in support, moving into NOC and security work, and ultimately
+          company, starting in support, moving into NOC and security work, and ultimately
           serving as a DevOps Specialist and Systems Administrator.
         </p>
         <p class="text-muted">
           Along the way, he built internal tooling and automation spanning distributed KVM
-          clusters, custom RAG pipelines, security systems, and business metrics platforms &mdash;
+          clusters, custom RAG pipelines, security systems, and business metrics platforms,
           always with an emphasis on clean, usable tools for the people who depend on them.
         </p>
         <p class="text-muted">
@@ -89,7 +89,7 @@ $open_source = [
         </p>
         <div class="mt-4">
           <h6 class="text-uppercase small fw-bold" style="color: var(--ps-navy); letter-spacing:.05em;">Education</h6>
-          <p class="text-muted small mb-0">B.A., Humanities (Minor in Political Science) &mdash; University of Pittsburgh</p>
+          <p class="text-muted small mb-0">B.A., Humanities (Minor in Political Science), University of Pittsburgh</p>
         </div>
       </div>
       <div class="col-lg-7">

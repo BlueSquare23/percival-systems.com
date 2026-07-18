@@ -1,6 +1,6 @@
 <?php
 $page_title = 'Home';
-$page_description = 'Percival Systems LLC — software development, systems administration, networking, and security services for small and mid-sized organizations.';
+$page_description = 'Percival Systems LLC: software development, systems administration, networking, and security services for small and mid-sized organizations.';
 $current_page = 'home';
 include __DIR__ . '/includes/header.php';
 
@@ -9,7 +9,8 @@ $service_highlights = [
     ['bi-gear-wide-connected', 'Custom Software', 'Backend systems, internal tooling, REST/JSON-RPC APIs, and the "software plumbing" that ties it together.'],
     ['bi-hdd-rack', 'Infrastructure & SysAdmin', 'Linux server management, QEMU/KVM virtualization, and Puppet/Ansible automation.'],
     ['bi-diagram-3', 'Networking & IT', 'Network design, VLANs, wireless deployment, VPNs, and network segmentation.'],
-    ['bi-shield-lock', 'Security', 'Penetration testing, rate limiting, threat intelligence, and SOC/SIEM monitoring.'],
+    ['bi-shield-lock', 'Security', 'Penetration testing, intrusion detection, malware cleanup, and SOC/SIEM monitoring.'],
+    ['bi-wordpress', 'WordPress', 'Site design and development, automatic updates and backups, and custom plugins and themes.'],
     ['bi-envelope-at', 'Hosting & Email', 'Web hosting, email deliverability, SSL automation, and DNS configuration.'],
     ['bi-clipboard-check', 'Consulting & Auditing', 'Architecture and security audits, fractional IT, and process documentation.'],
     ['bi-cpu', 'AI & Data', 'Custom RAG pipelines, internal LLM tooling, and business metrics pipelines.'],
@@ -24,7 +25,7 @@ $service_highlights = [
         <h1 class="fw-bold mb-4">Practical engineering for the systems your business runs on.</h1>
         <p class="lead mb-4">
           Percival Systems LLC builds and maintains the software, servers, and networks that
-          keep organizations running &mdash; from custom applications to the infrastructure
+          keep organizations running, from custom applications to the infrastructure
           underneath them.
         </p>
         <div class="d-flex flex-wrap gap-3">
@@ -75,7 +76,7 @@ $service_highlights = [
         <h2 class="mb-4">Built on real production experience, not just theory.</h2>
         <p class="text-muted">
           Percival Systems LLC was founded by an engineer with 6+ years running infrastructure
-          for a production web hosting company &mdash; managing distributed KVM clusters, building
+          for a production web hosting company, managing distributed KVM clusters, building
           internal automation, and keeping customer-facing systems online. That background shapes
           how we work: practical, automation-first, and security-conscious from the start.
         </p>

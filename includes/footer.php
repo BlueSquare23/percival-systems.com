@@ -10,7 +10,7 @@
         </a>
         <p class="small mb-0">
           Software development and IT services built on real-world production
-          infrastructure experience &mdash; from the network layer to the application layer.
+          infrastructure experience, from the network layer to the application layer.
         </p>
       </div>
       <div class="col-lg-4">

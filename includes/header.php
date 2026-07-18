@@ -30,6 +30,7 @@ function ps_nav_class($page, $current) {
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 <link href="/assets/css/style.css" rel="stylesheet">
+<?php if (!empty($extra_head)) echo $extra_head; ?>
 </head>
 <body>
 
