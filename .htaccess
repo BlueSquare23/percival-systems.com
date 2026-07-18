@@ -1,0 +1,20 @@
+<Files ".env">
+  Deny from all
+</Files>
+
+<Files ".gitignore">
+  Deny from all
+</Files>
+
+<Files "README.md">
+  Deny from all
+</Files>
+
+<Files "CLAUDE.md">
+  Deny from all
+</Files>
+
+<Files ".git/">
+  Deny from all
+</Files>
+
