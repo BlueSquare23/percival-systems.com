@@ -87,10 +87,6 @@ $open_source = [
           small and mid-sized organizations that need software built and infrastructure run,
           without the overhead of a large agency.
         </p>
-        <div class="mt-4">
-          <h6 class="text-uppercase small fw-bold" style="color: var(--ps-navy); letter-spacing:.05em;">Education</h6>
-          <p class="text-muted small mb-0">B.A., Humanities (Minor in Political Science), University of Pittsburgh</p>
-        </div>
       </div>
       <div class="col-lg-7">
         <div class="section-eyebrow mb-2">Experience Highlights</div>

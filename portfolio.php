@@ -33,7 +33,7 @@ $projects = [
         'name' => 'Allegheny United',
         'url' => 'https://alleghenyunited.org/',
         'icon' => 'bi-globe2',
-        'desc' => 'Website design and development.',
+        'desc' => 'Backend API development & integration.',
     ],
 ];
 ?>
