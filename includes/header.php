@@ -30,6 +30,15 @@ function ps_nav_class($page, $current) {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  // Applied before CSS/paint so a stored dark preference doesn't flash light first.
+  // Default (no stored value, or "light") is light mode: no attribute needed.
+  (function () {
+    if (localStorage.getItem('ps-theme') === 'dark') {
+      document.documentElement.setAttribute('data-bs-theme', 'dark');
+    }
+  })();
+</script>
 <title><?php echo htmlspecialchars($page_title); ?> | <?php echo htmlspecialchars($site_name); ?></title>
 <meta name="description" content="<?php echo htmlspecialchars($page_description); ?>">
 <link rel="canonical" href="<?php echo htmlspecialchars($og_url); ?>">
@@ -76,6 +85,11 @@ function ps_nav_class($page, $current) {
         <li class="nav-item"><a class="<?php echo ps_nav_class('services', $current_page); ?>" href="/services.php">Services</a></li>
         <li class="nav-item"><a class="<?php echo ps_nav_class('portfolio', $current_page); ?>" href="/portfolio.php">Portfolio</a></li>
         <li class="nav-item"><a class="<?php echo ps_nav_class('about', $current_page); ?>" href="/about.php">About</a></li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+          <button type="button" id="themeToggle" class="btn btn-outline-gold theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+            <i class="bi bi-moon-stars-fill" id="themeToggleIcon"></i>
+          </button>
+        </li>
         <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
           <a class="btn btn-gold btn-sm px-3" href="/contact.php">Contact</a>
         </li>

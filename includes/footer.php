@@ -46,5 +46,33 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  (function () {
+    var root = document.documentElement;
+    var toggle = document.getElementById('themeToggle');
+    var icon = document.getElementById('themeToggleIcon');
+
+    function applyIcon(theme) {
+      if (icon) {
+        icon.className = theme === 'dark' ? 'bi bi-sun-fill' : 'bi bi-moon-stars-fill';
+      }
+    }
+
+    applyIcon(root.getAttribute('data-bs-theme') === 'dark' ? 'dark' : 'light');
+
+    if (toggle) {
+      toggle.addEventListener('click', function () {
+        var next = root.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark';
+        if (next === 'dark') {
+          root.setAttribute('data-bs-theme', 'dark');
+        } else {
+          root.removeAttribute('data-bs-theme');
+        }
+        localStorage.setItem('ps-theme', next);
+        applyIcon(next);
+      });
+    }
+  })();
+</script>
 </body>
 </html>

@@ -15,6 +15,7 @@
 body {
   font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   color: #2a2f36;
+  transition: background-color .15s ease, color .15s ease;
 }
 
 h1, h2, h3, h4, h5, .navbar-brand {
@@ -79,6 +80,18 @@ a {
   bottom: -2px;
   height: 2px;
   background: var(--ps-gold);
+}
+
+/* Theme toggle */
+.theme-toggle-btn {
+  width: 2.35rem;
+  height: 2.35rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 50%;
+  font-size: 1rem;
 }
 
 /* Buttons */
@@ -293,5 +306,44 @@ a {
 /* Alerts spacing on contact page */
 .form-label {
   font-weight: 600;
+  color: var(--ps-navy);
+}
+
+/* Dark mode overrides.
+   Bootstrap 5.3's built-in color modes already re-theme its own components
+   (cards, forms, alerts, text-muted, etc.) via [data-bs-theme="dark"] on <html>.
+   These rules only cover custom classes with colors hardcoded above. */
+html[data-bs-theme="dark"] body {
+  color: var(--bs-body-color);
+}
+
+html[data-bs-theme="dark"] .section-alt {
+  background-color: #101b2d;
+}
+
+html[data-bs-theme="dark"] .card-ps .card-title {
+  color: #f4f6f9;
+}
+
+html[data-bs-theme="dark"] .exp-item h5 {
+  color: #f4f6f9;
+}
+
+html[data-bs-theme="dark"] .form-label {
+  color: var(--ps-gold-light);
+}
+
+html[data-bs-theme="dark"] .skill-badge {
+  background-color: #1c2e47;
+  color: var(--ps-gold-light);
+}
+
+html[data-bs-theme="dark"] .btn-outline-navy {
+  border-color: var(--ps-gold);
+  color: var(--ps-gold-light);
+}
+
+html[data-bs-theme="dark"] .btn-outline-navy:hover {
+  background-color: var(--ps-gold);
   color: var(--ps-navy);
 }
