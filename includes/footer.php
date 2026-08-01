@@ -5,7 +5,7 @@
     <div class="row g-4">
       <div class="col-lg-4">
         <a href="/index.php" class="d-flex align-items-center gap-2 text-white text-decoration-none mb-3">
-          <span class="logo-mark"><i class="bi bi-diagram-3-fill"></i></span>
+          <span class="logo-mark"><img src="/assets/img/circuitry_Y.svg" alt="Percival Systems logo mark"></span>
           <span class="fw-semibold">Percival Systems <span style="color: var(--ps-gold);">LLC</span></span>
         </a>
         <p class="small mb-0">

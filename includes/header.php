@@ -42,6 +42,7 @@ function ps_nav_class($page, $current) {
 <title><?php echo htmlspecialchars($page_title); ?> | <?php echo htmlspecialchars($site_name); ?></title>
 <meta name="description" content="<?php echo htmlspecialchars($page_description); ?>">
 <link rel="canonical" href="<?php echo htmlspecialchars($og_url); ?>">
+<link rel="icon" type="image/svg+xml" href="/assets/img/circuitry_Y.svg">
 
 <!-- Open Graph / Facebook, Slack, iMessage, etc. -->
 <meta property="og:type" content="website">
@@ -73,7 +74,7 @@ function ps_nav_class($page, $current) {
 <nav class="navbar navbar-expand-lg navbar-dark navbar-ps sticky-top">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center gap-2" href="/index.php">
-      <span class="logo-mark"><i class="bi bi-diagram-3-fill"></i></span>
+      <span class="logo-mark"><img src="/assets/img/circuitry_Y.svg" alt="Percival Systems logo mark"></span>
       <span>Percival Systems <span class="brand-llc">LLC</span></span>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">

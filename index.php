@@ -36,7 +36,7 @@ $service_highlights = [
       </div>
       <div class="col-lg-5">
         <div class="hero-icon-wrap">
-          <i class="bi bi-diagram-3-fill"></i>
+          <img src="/assets/img/circuitry_Y.svg" alt="Percival Systems logo mark">
         </div>
       </div>
     </div>

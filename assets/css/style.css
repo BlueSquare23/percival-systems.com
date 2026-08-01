@@ -48,13 +48,13 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.35rem;
-  height: 2.35rem;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--ps-gold-light), var(--ps-gold-dark));
-  color: var(--ps-navy);
-  font-size: 1.2rem;
+  height: 2.1rem;
   flex-shrink: 0;
+}
+
+.logo-mark img {
+  height: 100%;
+  width: auto;
 }
 
 .navbar-ps .nav-link {
@@ -179,9 +179,9 @@ a {
   border: 1px solid rgba(212, 175, 55, .35);
 }
 
-.hero-icon-wrap i {
-  font-size: 7rem;
-  color: var(--ps-gold);
+.hero-icon-wrap img {
+  width: 45%;
+  height: auto;
   opacity: .9;
 }
 
