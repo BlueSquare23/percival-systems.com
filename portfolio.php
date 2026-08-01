@@ -12,7 +12,7 @@ $projects = [
         'desc' => 'Website design and development.',
     ],
     [
-        'name' => 'Sureshot Inc',
+        'name' => 'Sureshot Productions Inc.',
         'url' => 'http://sureshotinc.com/',
         'icon' => 'bi-globe2',
         'desc' => 'Website design and development.',
