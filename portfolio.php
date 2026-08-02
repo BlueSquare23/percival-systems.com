@@ -81,7 +81,7 @@ $projects = [
     <p class="lead mb-4 col-lg-8 mx-auto" style="color: rgba(255,255,255,.85);">
       Let's build something worth showing off.
     </p>
-    <a href="/contact.php" class="btn btn-gold btn-lg px-4">Start a Project</a>
+    <a href="/contact" class="btn btn-gold btn-lg px-4">Start a Project</a>
   </div>
 </section>
 

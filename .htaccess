@@ -1,3 +1,17 @@
+RewriteEngine On
+RewriteBase /
+
+# --- Redirect old .php URLs to clean URLs (SEO/bookmarks) ---
+RewriteCond %{THE_REQUEST} \s/+index\.php[\s?] [NC]
+RewriteRule ^index\.php$ /home [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+(about|services|portfolio|contact)\.php[\s?] [NC]
+RewriteRule ^(about|services|portfolio|contact)\.php$ /$1 [R=301,L,QSA]
+
+# --- Internally serve the .php file behind each clean URL ---
+RewriteRule ^home/?$ index.php [L]
+RewriteRule ^(about|services|portfolio|contact)/?$ $1.php [L,QSA]
+
 <Files ".env">
   Deny from all
 </Files>

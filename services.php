@@ -163,7 +163,7 @@ $services = [
       Tell us what you're working with and what's not working, and we'll help you figure out
       the right scope.
     </p>
-    <a href="/contact.php" class="btn btn-gold btn-lg px-4">Contact Us</a>
+    <a href="/contact" class="btn btn-gold btn-lg px-4">Contact Us</a>
   </div>
 </section>
 

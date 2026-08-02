@@ -30,8 +30,8 @@ $service_highlights = [
           underneath them.
         </p>
         <div class="d-flex flex-wrap gap-3">
-          <a href="/services.php" class="btn btn-gold btn-lg px-4">View Our Services</a>
-          <a href="/contact.php" class="btn btn-outline-gold btn-lg px-4">Get In Touch</a>
+          <a href="/services" class="btn btn-gold btn-lg px-4">View Our Services</a>
+          <a href="/contact" class="btn btn-outline-gold btn-lg px-4">Get In Touch</a>
         </div>
       </div>
       <div class="col-lg-5">
@@ -64,7 +64,7 @@ $service_highlights = [
       <?php endforeach; ?>
     </div>
     <div class="text-center mt-5">
-      <a href="/services.php" class="btn btn-outline-navy px-4">See Full Service List</a>
+      <a href="/services" class="btn btn-outline-navy px-4">See Full Service List</a>
     </div>
   </div>
 </section>
@@ -81,7 +81,7 @@ $service_highlights = [
           internal automation, and keeping customer-facing systems online. That background shapes
           how we work: practical, automation-first, and security-conscious from the start.
         </p>
-        <a href="/about.php" class="btn btn-outline-navy mt-2">More About Us</a>
+        <a href="/about" class="btn btn-outline-navy mt-2">More About Us</a>
       </div>
       <div class="col-lg-6">
         <div class="row g-4">
@@ -126,7 +126,7 @@ $service_highlights = [
       Whether it's a new application, a server migration, or an infrastructure audit,
       let's talk about what you need.
     </p>
-    <a href="/contact.php" class="btn btn-gold btn-lg px-4">Contact Us</a>
+    <a href="/contact" class="btn btn-gold btn-lg px-4">Contact Us</a>
   </div>
 </section>
 

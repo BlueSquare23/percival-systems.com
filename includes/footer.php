@@ -4,7 +4,7 @@
   <div class="container py-5">
     <div class="row g-4">
       <div class="col-lg-4">
-        <a href="/index.php" class="d-flex align-items-center gap-2 text-white text-decoration-none mb-3">
+        <a href="/home" class="d-flex align-items-center gap-2 text-white text-decoration-none mb-3">
           <span class="logo-mark"><img src="/assets/img/circuitry_Y.svg" alt="Percival Systems logo mark"></span>
           <span class="fw-semibold">Percival Systems <span style="color: var(--ps-gold);">LLC</span></span>
         </a>
@@ -16,11 +16,11 @@
       <div class="col-lg-4">
         <h6>Quick Links</h6>
         <ul class="list-unstyled small">
-          <li class="mb-2"><a href="/index.php">Home</a></li>
-          <li class="mb-2"><a href="/services.php">Services</a></li>
-          <li class="mb-2"><a href="/portfolio.php">Portfolio</a></li>
-          <li class="mb-2"><a href="/about.php">About</a></li>
-          <li class="mb-2"><a href="/contact.php">Contact</a></li>
+          <li class="mb-2"><a href="/home">Home</a></li>
+          <li class="mb-2"><a href="/services">Services</a></li>
+          <li class="mb-2"><a href="/portfolio">Portfolio</a></li>
+          <li class="mb-2"><a href="/about">About</a></li>
+          <li class="mb-2"><a href="/contact">Contact</a></li>
         </ul>
       </div>
       <div class="col-lg-4">

@@ -73,7 +73,7 @@ function ps_nav_class($page, $current) {
 
 <nav class="navbar navbar-expand-lg navbar-dark navbar-ps sticky-top">
   <div class="container">
-    <a class="navbar-brand d-flex align-items-center gap-2" href="/index.php">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="/home">
       <span class="logo-mark"><img src="/assets/img/circuitry_Y.svg" alt="Percival Systems logo mark"></span>
       <span>Percival Systems <span class="brand-llc">LLC</span></span>
     </a>
@@ -82,17 +82,17 @@ function ps_nav_class($page, $current) {
     </button>
     <div class="collapse navbar-collapse" id="mainNav">
       <ul class="navbar-nav ms-auto align-items-lg-center">
-        <li class="nav-item"><a class="<?php echo ps_nav_class('home', $current_page); ?>" href="/index.php">Home</a></li>
-        <li class="nav-item"><a class="<?php echo ps_nav_class('services', $current_page); ?>" href="/services.php">Services</a></li>
-        <li class="nav-item"><a class="<?php echo ps_nav_class('portfolio', $current_page); ?>" href="/portfolio.php">Portfolio</a></li>
-        <li class="nav-item"><a class="<?php echo ps_nav_class('about', $current_page); ?>" href="/about.php">About</a></li>
+        <li class="nav-item"><a class="<?php echo ps_nav_class('home', $current_page); ?>" href="/home">Home</a></li>
+        <li class="nav-item"><a class="<?php echo ps_nav_class('services', $current_page); ?>" href="/services">Services</a></li>
+        <li class="nav-item"><a class="<?php echo ps_nav_class('portfolio', $current_page); ?>" href="/portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="<?php echo ps_nav_class('about', $current_page); ?>" href="/about">About</a></li>
         <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
           <button type="button" id="themeToggle" class="btn btn-outline-gold theme-toggle-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
             <i class="bi bi-moon-stars-fill" id="themeToggleIcon"></i>
           </button>
         </li>
         <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
-          <a class="btn btn-gold btn-sm px-3" href="/contact.php">Contact</a>
+          <a class="btn btn-gold btn-sm px-3" href="/contact">Contact</a>
         </li>
       </ul>
     </div>

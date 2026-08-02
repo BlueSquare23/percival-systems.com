@@ -154,7 +154,7 @@ $open_source = [
     <p class="lead mb-4 col-lg-8 mx-auto" style="color: rgba(255,255,255,.85);">
       Get in touch to talk about your project or infrastructure needs.
     </p>
-    <a href="/contact.php" class="btn btn-gold btn-lg px-4">Contact Us</a>
+    <a href="/contact" class="btn btn-gold btn-lg px-4">Contact Us</a>
   </div>
 </section>
 
