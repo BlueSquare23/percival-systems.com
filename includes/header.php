@@ -4,12 +4,10 @@ $site_email = 'contact@percival-systems.com';
 $site_phone = '(412)-780-2053';
 $site_phone_tel = '+14127802053';
 
-// Canonical production URL, used for social link previews (Open Graph/Twitter Card).
-// Hardcoded rather than derived from $_SERVER so previews always point at the live
-// site, even when this is rendered from a local/dev host.
+// Canonical production URL, used for social link previews (Open Graph/Twitter Card)
+// and the <link rel="canonical"> tag. Hardcoded rather than derived from $_SERVER
+// so previews always point at the live site, even when rendered from a local/dev host.
 $site_url = 'https://percival-systems.com';
-$og_url   = $site_url . ($_SERVER['PHP_SELF'] ?? '/index.php');
-$og_image = $site_url . '/assets/img/og-image.png';
 
 if (!isset($page_title)) {
     $page_title = 'Software & IT Services';
@@ -20,6 +18,19 @@ if (!isset($page_description)) {
 if (!isset($current_page)) {
     $current_page = '';
 }
+
+// Map each page to its clean URL rather than trusting PHP_SELF, which resolves to
+// the underlying .php script path (e.g. /services.php) regardless of the clean URL
+// the visitor actually used — that would mismatch the sitemap and .htaccess rewrites.
+$clean_paths = [
+    'home'      => '/',
+    'services'  => '/services',
+    'portfolio' => '/portfolio',
+    'about'     => '/about',
+    'contact'   => '/contact',
+];
+$og_url   = $site_url . ($clean_paths[$current_page] ?? '/');
+$og_image = $site_url . '/assets/img/og-image.png';
 
 function ps_nav_class($page, $current) {
     return 'nav-link' . ($page === $current ? ' active' : '');

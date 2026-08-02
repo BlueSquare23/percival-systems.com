@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /contact-process.php
+Disallow: /includes/
+
+Sitemap: https://percival-systems.com/sitemap.xml

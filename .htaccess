@@ -1,6 +1,10 @@
 RewriteEngine On
 RewriteBase /
 
+# --- Block known aggressive/non-compliant scraper bots (robots.txt is honor-system only) ---
+RewriteCond %{HTTP_USER_AGENT} (AhrefsBot|SemrushBot|MJ12bot|DotBot|PetalBot|BLEXBot|MauiBot|SeekportBot|DataForSeoBot) [NC]
+RewriteRule ^ - [F,L]
+
 # --- Redirect old .php URLs to clean URLs (SEO/bookmarks) ---
 RewriteCond %{THE_REQUEST} \s/+index\.php[\s?] [NC]
 RewriteRule ^index\.php$ /home [R=301,L]
