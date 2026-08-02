@@ -6,10 +6,10 @@ include __DIR__ . '/includes/header.php';
 
 $projects = [
     [
-        'name' => 'Tailiens',
-        'url' => 'https://tailiens.com/',
+        'name' => 'Idealized Science Institute',
+        'url' => 'https://www.idealizedscience.org/',
         'icon' => 'bi-globe2',
-        'desc' => 'Website design and development.',
+        'desc' => 'Website development and consultation.',
     ],
     [
         'name' => 'Sureshot Productions Inc.',
@@ -18,22 +18,28 @@ $projects = [
         'desc' => 'Website design and development.',
     ],
     [
-        'name' => 'johnlradford.io',
-        'url' => 'https://johnlradford.io/',
-        'icon' => 'bi-person-badge',
-        'desc' => "Personal site for Percival Systems' founder, John Radford.",
-    ],
-    [
-        'name' => 'Dillon F. Meyer',
+        'name' => 'DFM Media',
         'url' => 'https://dillonfmeyer.com/',
         'icon' => 'bi-globe2',
         'desc' => 'Website design and development.',
+    ],
+    [
+        'name' => 'johnlradford.io',
+        'url' => 'https://johnlradford.io/',
+        'icon' => 'bi-person-badge',
+        'desc' => "Personal site for Percival Systems' founder, John R.",
     ],
     [
         'name' => 'Allegheny United',
         'url' => 'https://alleghenyunited.org/',
         'icon' => 'bi-globe2',
         'desc' => 'Backend API development & integration.',
+    ],
+    [
+        'name' => 'Tailiens',
+        'url' => 'https://tailiens.com/',
+        'icon' => 'bi-globe2',
+        'desc' => 'Website design and development.',
     ],
 ];
 ?>

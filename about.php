@@ -73,7 +73,7 @@ $open_source = [
         <div class="section-eyebrow mb-2">Our Story</div>
         <h2 class="mb-4">From production hosting to Percival Systems</h2>
         <p class="text-muted">
-          Before founding Percival Systems, John spent 6+ years at a production web hosting
+          Before founding Percival Systems, John spent nearly a decade at a production web hosting
           company, starting in support, moving into NOC and security work, and ultimately
           serving as a DevOps Specialist and Systems Administrator.
         </p>
