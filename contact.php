@@ -55,10 +55,16 @@ include __DIR__ . '/includes/header.php';
   <div class="container py-4">
     <div class="eyebrow mb-3">Get In Touch</div>
     <h1 class="fw-bold mb-3">Contact Us</h1>
-    <p class="lead mb-0 col-lg-8">
+    <p class="lead mb-3 col-lg-8">
       Tell us a bit about your project or your infrastructure, and we'll follow up
       at <?php echo htmlspecialchars($site_email); ?> or <?php echo htmlspecialchars($site_phone); ?>.
     </p>
+    <div class="social-links d-flex gap-2">
+      <a href="https://www.youtube.com/@PercivalSystems" class="social-link" target="_blank" rel="noopener" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+      <a href="https://www.instagram.com/percivalsystems" class="social-link" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.facebook.com/61592793868206/" class="social-link" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.linkedin.com/company/percival-systems" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+    </div>
   </div>
 </section>
 
