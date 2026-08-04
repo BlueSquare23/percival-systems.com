@@ -41,6 +41,7 @@
           <a href="https://www.instagram.com/percivalsystems" class="social-link" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
           <a href="https://www.facebook.com/61592793868206/" class="social-link" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
           <a href="https://www.linkedin.com/company/percival-systems" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/Percival-Systems" class="social-link" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
         </div>
       </div>
     </div>
