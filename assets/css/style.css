@@ -280,6 +280,25 @@ a {
   border-color: rgba(255, 255, 255, .15);
 }
 
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 50%;
+  color: rgba(255, 255, 255, .75);
+  font-size: 1rem;
+  transition: background-color .15s ease, border-color .15s ease, color .15s ease;
+}
+
+.social-link:hover {
+  background-color: var(--ps-gold);
+  border-color: var(--ps-gold);
+  color: var(--ps-navy);
+}
+
 /* Skill badges (About page) */
 .skill-badge {
   background-color: #eef1f6;

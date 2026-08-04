@@ -36,6 +36,12 @@
           </li>
           <li class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i>Pittsburgh, PA</li>
         </ul>
+        <div class="social-links d-flex gap-2 mt-3">
+          <a href="https://www.youtube.com/@PercivalSystems" class="social-link" target="_blank" rel="noopener" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          <a href="https://www.instagram.com/percivalsystems" class="social-link" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.facebook.com/61592793868206/" class="social-link" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.linkedin.com/company/percival-systems" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        </div>
       </div>
     </div>
     <hr>
